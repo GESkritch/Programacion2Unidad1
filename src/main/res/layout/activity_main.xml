@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.MainActivity">
+
+    <!-- Primera seccion: Pastel de Choclo -->
+    <TextView
+        android:id="@+id/tvPlatillo1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pastel de Choclo ($12.000)"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Imagen para Pastel de Choclo -->
+    <ImageView
+        android:id="@+id/ivPastelChoclo"
+        android:layout_width="170dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pastel_choclo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPlatillo1" />
+
+    <!-- EditText para cantidad de Pastel de Choclo -->
+    <EditText
+        android:id="@+id/etCantidad1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/ivPastelChoclo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvSubtotal1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Subtotal: $0"
+        app:layout_constraintTop_toBottomOf="@id/etCantidad1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Segunda seccion: Cazuela -->
+    <TextView
+        android:id="@+id/tvPlatillo2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cazuela ($10.000)"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtotal1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Imagen para Cazuela -->
+    <ImageView
+        android:id="@+id/ivCazuela"
+        android:layout_width="153dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cazuela"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPlatillo2" />
+
+    <!-- EditText para cantidad de Cazuela -->
+    <EditText
+        android:id="@+id/etCantidad2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/ivCazuela"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvSubtotal2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Subtotal: $0"
+        app:layout_constraintTop_toBottomOf="@id/etCantidad2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Switch para activar la propina -->
+    <Switch
+        android:id="@+id/switchPropina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incluir propina del 10%"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtotal2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Totales -->
+    <TextView
+        android:id="@+id/tvTotalSinPropina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Total sin propina: $0"
+        app:layout_constraintTop_toBottomOf="@id/switchPropina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvPropina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Propina: $0"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalSinPropina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTotalConPropina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Total con propina: $0"
+        app:layout_constraintTop_toBottomOf="@id/tvPropina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
