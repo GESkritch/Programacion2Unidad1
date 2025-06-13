@@ -1,2 +1,2 @@
 Trabajo creado por Mauricio Ignasio Carrillo Fuentes <br>
-Dentro del GitHub tenemos los archivos principales que son, MainActivity.kt, Pedido.kt, Platillo.kt, AndroidManifest.xml, Build.gradle.kts, y los archivos de la carpeta res/drawable y res/layout, todos estos archivos son los principales en el funcionamiento de esta app solicitada.
+Dentro del src tenemos los archivos principales que son, MainActivity.kt, Pedido.kt, Platillo.kt, AndroidManifest.xml, Build.gradle.kts, y los archivos de la carpeta res/drawable y res/layout, todos estos archivos son los principales en el funcionamiento de esta app solicitada.
